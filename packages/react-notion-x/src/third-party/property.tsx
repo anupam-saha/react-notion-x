@@ -144,7 +144,7 @@ export const PropertyImpl: React.FC<IPropertyProps> = (props) => {
         }
 
         case 'person':
-          // console.log('person', schema, data)
+          console.log('personnnnnn', schema, data)
           content = <Text value={data} block={block} />
           break
 
