@@ -144,10 +144,18 @@ export const PropertyImpl: React.FC<IPropertyProps> = (props) => {
         }
 
         case 'person':
-          console.log('personnnnnn', schema, data)
-          content = <Text value={data} block={block} />
+          content = (
+            <div>
+              <img
+                src='https://www.kindpng.com/picc/m/24-248253_user-profile-default-image-png-clipart-png-download.png'
+                width='15'
+                height='15'
+                alt='name'
+              />
+              <p>Default name</p>
+            </div>
+          )
           break
-
         case 'file': {
           // TODO: assets should be previewable via image-zoom
           const files = data
