@@ -56,19 +56,21 @@ export const CollectionRow: React.FC<{
           const schema = schemas[id]
 
           return (
-            <div className='notion-collection-row-property' key={id}>
-              <CollectionColumnTitle schema={schema} />
+            schema.type !== 'person' && (
+              <div className='notion-collection-row-property' key={id}>
+                <CollectionColumnTitle schema={schema} />
 
-              <div className='notion-collection-row-value'>
-                <Property
-                  schema={schema}
-                  data={block.properties?.[id]}
-                  block={block}
-                  collection={collection}
-                  pageHeader={pageHeader}
-                />
+                <div className='notion-collection-row-value'>
+                  <Property
+                    schema={schema}
+                    data={block.properties?.[id]}
+                    block={block}
+                    collection={collection}
+                    pageHeader={pageHeader}
+                  />
+                </div>
               </div>
-            </div>
+            )
           )
         })}
       </div>
