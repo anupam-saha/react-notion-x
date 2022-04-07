@@ -14,6 +14,9 @@
 npm install react-notion-x-custom
 ```
 
+## Customization
+
+Person property is hidden from the list of properties available.
 ## Usage
 
 First you'll want to fetch the content for a Notion page:
