@@ -2,7 +2,7 @@
   <img alt="React Notion X" src="https://raw.githubusercontent.com/NotionX/react-notion-x/master/media/notion-ts.png" width="689">
 </p>
 
-# React Notion X
+# React Notion X Custom
 
 > Fast and accurate React renderer for Notion.
 
@@ -11,7 +11,7 @@
 ## Install
 
 ```bash
-npm install react-notion-x
+npm install react-notion-x-custom
 ```
 
 ## Usage
@@ -31,7 +31,7 @@ Once you have the data for a Notion page, you can render it:
 
 ```tsx
 import React from 'react'
-import { NotionRenderer } from 'react-notion-x'
+import { NotionRenderer } from 'react-notion-x-custom'
 
 export default ExampleNotionPage({ recordMap }) => (
   <NotionRenderer
@@ -48,7 +48,7 @@ You'll need to import some CSS styles as well. If you're using Next.js, we recom
 
 ```ts
 // core styles shared by all of react-notion-x (required)
-import 'react-notion-x/src/styles.css'
+import 'react-notion-x-custom/src/styles.css'
 
 // used for code syntax highlighting (optional)
 import 'prismjs/themes/prism-tomorrow.css'
