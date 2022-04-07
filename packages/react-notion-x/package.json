@@ -1,9 +1,9 @@
 {
   "name": "react-notion-x-custom",
-  "version": "6.6.17",
+  "version": "6.6.18",
   "type": "module",
   "description": "Fast and accurate React renderer for Notion.",
-  "repository": "react-notion-x",
+  "repository": "anupam-saha/react-notion-x",
   "author": "Anupam Saha <travis@transitivebullsh.it>",
   "license": "MIT",
   "main": "./build/index.js",
